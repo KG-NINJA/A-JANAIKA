@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hum & Compose AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hum & Compose AI</h1>
+            <p>Let AI create music from your hummed melodies!</p>
+        </header>
+
+        <section class="controls">
+            <button id="recordButton" class="button-primary">Record Melody</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+            <button id="composeButton" class="button-cta" disabled>Compose with AI</button>
+        </section>
+
+        <section class="status-section">
+            <h2>Status</h2>
+            <div id="status">Welcome! Click "Record Melody" to start.</div>
+        </section>
+
+        <section class="download-section">
+            <a id="downloadLink" href="#" class="button-download" style="display:none;" download>Download Composed MIDI</a>
+        </section>
+
+        <footer>
+            <p>(Note: Humming-to-melody transcription is not yet implemented. Using placeholder melody for AI composition.)</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

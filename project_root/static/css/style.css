@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.controls button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.controls button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.controls button.button-primary {
+    background-color: #2ecc71;
+}
+.controls button.button-primary:hover:not(:disabled) {
+    background-color: #27ae60;
+}
+
+.controls button.button-cta {
+    background-color: #e67e22;
+}
+.controls button.button-cta:hover:not(:disabled) {
+    background-color: #d35400;
+}
+
+
+.status-section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.status-section h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+#status {
+    font-size: 1em;
+    /* color: #7f8c8d; (remove default color to use class-based) */
+    min-height: 20px; /* Reserve space */
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 5px; /* Add some margin if not already part of .status-section padding */
+}
+
+.status-info {
+    background-color: #eaf5ff;
+    color: #3498db;
+    border: 1px solid #aed6f1;
+}
+
+.status-success {
+    background-color: #e9f7ef;
+    color: #2ecc71;
+    border: 1px solid #a9dfbf;
+}
+
+.status-warning {
+    background-color: #fef9e7;
+    color: #f39c12;
+    border: 1px solid #fadf9b;
+}
+
+.status-error {
+    background-color: #fdedec;
+    color: #e74c3c;
+    border: 1px solid #f5b7b1;
+}
+
+.download-section {
+    margin-top: 25px;
+}
+
+.button-download {
+    display: inline-block; /* To allow styling like a button */
+    background-color: #9b59b6;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.button-download:hover {
+    background-color: #8e44ad;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #95a5a6;
+}
